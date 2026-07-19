@@ -1,19 +1,26 @@
-import "./globals.scss";
-import type { Metadata } from "next";
+import StoreProvider from "@/store/StoreProvider";
 
-export const metadata: Metadata = {
-  title: "Афиша",
-  description: "Сервис поиска мероприятий",
-};
 
 export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="ru">
-      <body>{children}</body>
-    </html>
-  );
+ children,
+}:{
+ children:React.ReactNode;
+}){
+
+return (
+<html lang="ru">
+
+<body>
+
+<StoreProvider>
+
+{children}
+
+</StoreProvider>
+
+</body>
+
+</html>
+);
+
 }

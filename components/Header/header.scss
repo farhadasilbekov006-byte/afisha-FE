@@ -1,0 +1,36 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--main-border);
+
+    div  {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+
+        h1 {
+            font-weight: 500;
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    button  {
+        background: none;
+        padding: 13px 15px;
+        font-size: 15px;
+        font-weight: 500;
+        border-radius: 10px;
+        border: 1px solid var(--main-border);
+        cursor: pointer;
+        &:hover  {
+            opacity: 0.7;
+        }
+    }
+}

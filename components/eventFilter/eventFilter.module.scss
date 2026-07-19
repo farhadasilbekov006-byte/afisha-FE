@@ -1,0 +1,74 @@
+.filterPage {
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--main-border);
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    &_Search {
+        width: 70%;
+        height: 35px;
+        border-radius: 8px;
+        padding-left: 10px;
+        border: 1px solid var(--main-border);
+    }
+
+    &_Filters {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        &_Category {
+            border-radius: 8px;
+            border: 1px solid var(--main-border);
+            cursor: pointer;
+        }
+    
+        &_Date {
+            border-radius: 8px;
+            cursor: pointer;
+            border: 1px solid var(--main-border);
+            padding-left: 5px;
+        }
+    
+        button {
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid var(--main-border);
+            cursor: pointer;
+            background: none;
+        }
+    }
+
+}
+
+@media (max-width: 687px) {
+    .filterPage {
+    flex-direction: column;
+        &_Search {
+            width: 100%;
+        }
+
+        &_Filters {
+        
+            &_Category {
+                width: 33%;
+                height: 35px;
+            }
+    
+            &_Date {
+                width: 33%;
+                height: 35px;
+                cursor: pointer;
+            }
+    
+            button {
+                width: 33%;
+                padding: 1px;
+                height: 35px;
+            }
+
+        }
+
+    }
+}
