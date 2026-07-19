@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter';
+}
+
+html , body {
+  width: 100%;
+  min-height: 100%;
+  padding: 5px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background: #f7f7f7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../public/font/Inter-VariableFont_opsz\,wght.ttf")
+}
+
+
+:root {
+    --border: #e7e7e7;
+    --background: #fae9d8;
+    --category-name: rgb(23, 91, 194);
+    --category-background: rgb(143, 182, 214);
+    --main-border: rgb(181, 181, 181);
+
+}
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    // padding: 20px;
+    border: 1px solid rgb(181, 181, 181);
+    border-radius: 10px;
+    background: #f5f5f5;
+    overflow: hidden;
+}
