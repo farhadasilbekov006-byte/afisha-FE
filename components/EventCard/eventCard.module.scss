@@ -3,71 +3,85 @@
     width: 380px;
     height: 280px;
     display: flex;
-    border-radius: 10px;
     flex-direction: column;
-    object-fit: cover;
+    border-radius: 10px;
     border: 1.5px solid var(--border);
+
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden;
+    cursor: pointer;
+
+    transition: transform .2s ease, box-shadow .2s ease;
+
+    &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, .12);
+    }
 
     &_img {
         background: var(--background);
         width: 100%;
-        border-radius: 10px 10px 0 0 ;
         height: 50%;
+        border-radius: 10px 10px 0 0;
         display: flex;
+        justify-content: center;
         align-items: center;
-        justify-content: center;
-        font-size: 20px;
         overflow: hidden;
-        object-fit: cover;
-        justify-content: center;
 
         img {
-            object-fit: cover;
             width: 100%;
             height: 100%;
+            object-fit: cover;
+            display: block;
         }
-        
-        
+    }
+
+    &_placeholder {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 42px;
+        color: #b5b5b5;
+        background: #f5f5f5;
     }
 
     &_name {
         color: black;
         padding: 13px;
-        font-weight: 550;
         margin: 0;
+        font-weight: 550;
     }
 
     &_eventMeta {
         display: flex;
-        flex-direction: row;
         align-items: center;
-        justify-content: start;
         gap: 2px;
-        padding: 5px 15px ;
+        padding: 5px 15px;
 
         &_date {
             display: flex;
-            flex-direction: row;
-            font-weight: 500;
-            gap: 3px;
             align-items: center;
+            gap: 3px;
+            font-weight: 500;
+
             img {
                 width: 20px;
             }
 
-            h3{
+            h3 {
                 margin: 0;
-
-                
             }
         }
 
         &_location {
             display: flex;
-            flex-direction: row;
             align-items: center;
-            font-weight: 500;
             gap: 3px;
+            font-weight: 500;
+
             img {
                 width: 20px;
             }
@@ -75,10 +89,10 @@
     }
 
     &_eventInfo {
-        padding: 15px 15px;
+        padding: 15px;
         display: flex;
-        align-items: center;
         justify-content: space-between;
+        align-items: center;
 
         span {
             padding: 3px 10px;
@@ -87,15 +101,12 @@
             background: var(--category-background);
             font-weight: 600;
         }
-        
     }
-
 }
-
 
 @media (max-width: 687px) {
     .card {
-        width: 300px;
-        background: blue;
+        width: 100%;
+        max-width: 380px;
     }
 }
