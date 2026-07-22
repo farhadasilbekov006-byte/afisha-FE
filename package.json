@@ -14,6 +14,7 @@
     "next": "16.2.10",
     "react": "19.2.4",
     "react-dom": "19.2.4",
+    "react-loading-skeleton": "^3.5.0",
     "react-redux": "^9.3.0",
     "sass": "^1.101.0"
   },
