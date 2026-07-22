@@ -33,7 +33,6 @@ export default function EventCard({ event }: Props) {
         <div className={styles.card_eventMeta_date}>
           <img src="/img/calendar.png" alt="Дата" />
           <p>{new Date(event.date).toLocaleDateString("ru-RU")}</p>
-
           <h3>·</h3>
         </div>
 
@@ -49,9 +48,7 @@ export default function EventCard({ event }: Props) {
         </span>
 
         <strong className={styles.card_eventInfo_price}>
-          {Number(event.price) === 0
-            ? "Бесплатно"
-            : `${event.price} сом`}
+          {Number(event.price) === 0 ? "Бесплатно" : `${event.price} с`}
         </strong>
       </div>
     </Link>
