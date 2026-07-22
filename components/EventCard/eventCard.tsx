@@ -15,7 +15,6 @@ export default function EventCard({event}: Props) {
                           src={event.imageUrl}
                           alt={event.title}
                         />
-
                     
                 ) : (
                     <div className={styles.card_placeholder}>
